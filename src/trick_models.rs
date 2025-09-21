@@ -10,21 +10,21 @@ pub struct Instruction {
 #[derive(Serialize, Deserialize, Clone)]
 pub struct Trick {
     pub id: Uuid,
-    pub name: String,
+    pub title: String,
     pub description: String,
     pub instructions: Vec<Instruction>,
 }
 
 #[derive(Serialize, Deserialize)]
 pub struct TrickCreateInput {
-    pub name: String,
+    pub title: String,
     pub description: String,
     pub instructions: Vec<Instruction>,
 }
 
 #[derive(Serialize, Deserialize)]
 pub struct TrickReplaceInput {
-    pub name: String,
+    pub title: String,
     pub description: String,
     pub instructions: Vec<Instruction>,
 }

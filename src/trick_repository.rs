@@ -17,7 +17,7 @@ impl TrickRepository {
     pub async fn create(&self, input: TrickCreateInput) -> Trick {
         let new_trick = Trick {
             id: Uuid::new_v4(),
-            name: input.name,
+            title: input.title,
             description: input.description,
             instructions: input.instructions,
         };
@@ -31,7 +31,7 @@ impl TrickRepository {
     pub async fn replace(&self, id: Uuid, input: TrickReplaceInput) -> Trick {
         let trick_to_replace = Trick {
             id: id.clone(),
-            name: input.name,
+            title: input.title,
             description: input.description,
             instructions: input.instructions,
         };
