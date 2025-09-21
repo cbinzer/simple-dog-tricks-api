@@ -6,7 +6,7 @@ This project is part of a blog post that demonstrates how to build a backend in 
 ## Features
 
 - Create, list, find, replace, and delete tricks
-- Each trick has a name, description, and instructions
+- Each trick has a title, description, and instructions
 - In-memory storage using a repository pattern
 - JSON input and output using [Serde](https://serde.rs/)
 
